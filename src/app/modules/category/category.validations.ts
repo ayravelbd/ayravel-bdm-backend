@@ -14,12 +14,27 @@ import { z } from "zod";
 // });
 
 export const createCategoryZodSchema = z.object({
-  mainCategory: z.string({
-    error: (issue) =>
-      issue.input === undefined
-        ? "Main category is required!"
-        : "Not a string!",
-  }),
+  mainCategory: z.enum([
+    "women-fashion",
+    "men-fashion",
+    "mens-special",
+    "skin-care",
+    "womens-decor",
+    "womens-special",
+    "cosmetics",
+    "bags",
+    "jewelry",
+    "home-decor",
+    "electronics-&-gadgets",
+    "shoes",
+    "watches",
+    "kids-fashion",
+    "offer",
+    "toys",
+    "health-beauty",
+    "groceries",
+    "clothing",
+  ]),
   name: z.string({
     error: (issue) =>
       issue.input === undefined

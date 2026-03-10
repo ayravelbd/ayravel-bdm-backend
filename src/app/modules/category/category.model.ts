@@ -13,6 +13,27 @@ const categorySchema = new Schema<TCategory>(
   {
     mainCategory: {
       type: String,
+      enum: [
+           "women-fashion",
+           "men-fashion",
+           "mens-special",
+           "skin-care",
+           "womens-decor",
+           "womens-special",
+           "cosmetics",
+           "bags",
+           "jewelry",
+           "home-decor",
+           "electronics-&-gadgets",
+           "shoes",
+           "watches",
+           "kids-fashion",
+           "offer",
+           "toys",
+           "health-beauty",
+           "groceries",
+           "clothing",
+      ],
       required: [true, "Category must have a main category!"],
     },
     name: {

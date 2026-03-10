@@ -16,17 +16,23 @@ app.use(morgan("dev"));
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
-      "http://localhost:5000",
       "http://localhost:3000",
       "http://localhost:3001",
+      
       "https://www.ayravel.com",
       "https://ayravel.com",
+
       "https://admin.ayravel.com",
-      "https://ayravel-customer.vercel.app",
+      "https://www.admin.ayravel.com",
+
       "https://www.ayravel-customer.com",
-      "https://ayravel-admin.vercel.app",
-      "https://www.ayravel-admin.vercel.app",
+      "https://ayravel-customer.vercel.app",
+
+      "https://ayravel-admin-new.vercel.app",
+      "https://www.ayravel-admin-new.vercel.app",
+
+      "https://ayravel-customer-2jgy.vercel.app",
+      "https://www.ayravel-customer-2jgy.vercel.app",
     ],
     credentials: true,
   })
@@ -44,7 +50,7 @@ app.use("/api/v1", router);
 
 //root route
 app.get("/", (req: Request, res: Response) => {
-  res.send("elizabeth bd backend api server boosted on....🔥🔥🚀");
+  res.send("AYraveL bd backend api server boosted on....🔥🔥🚀");
 });
 
 // //global error handler

@@ -172,7 +172,11 @@ const createDefaultSpecificationTemplates = () => __awaiter(void 0, void 0, void
             ]
         },
         {
+<<<<<<< HEAD
             categoryName: "electronics-&-gadgets",
+=======
+            categoryName: "electronics-gadgets",
+>>>>>>> b3edebc (fix issues)
             fields: [
                 {
                     name: "color",

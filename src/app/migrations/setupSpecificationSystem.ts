@@ -167,7 +167,7 @@ const createDefaultSpecificationTemplates = async () => {
       ]
     },
     {
-      categoryName: "electronics-&-gadgets",
+      categoryName: "electronics-gadgets",
       fields: [
         {
           name: "color",
